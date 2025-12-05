@@ -1,0 +1,172 @@
+/* ====== Global Reset & Base ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #212529;
+  padding: 20px;
+}
+
+/* ====== Headings ====== */
+h1, h2, h3 {
+  font-weight: 600;
+  color: #0d3b66;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-left: 4px solid #0d6efd;
+  padding-left: 8px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #0d6efd;
+}
+
+/* ====== Text ====== */
+.text-muted {
+  color: #6c757d;
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+/* ====== Sections ====== */
+section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* ====== Table ====== */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.table th, .table td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.table th {
+  background-color: #0d3b66;
+  color: #fff;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f1f3f5;
+}
+
+/* ====== Badges ====== */
+.badge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.badge-tech { background-color: #0d6efd; }
+.badge-ana  { background-color: #6f42c1; }
+.badge-mgr  { background-color: #198754; }
+.badge-soft { background-color: #fd7e14; }
+
+/* ====== Buttons ====== */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+}
+
+.btn-outline-primary {
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+  background: transparent;
+}
+
+.btn-outline-secondary {
+  border: 1px solid #6c757d;
+  color: #6c757d;
+  background: transparent;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* ====== Layout Helpers ====== */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.col-md-6 {
+  flex: 1 1 calc(50% - 1rem);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.me-2 {
+  margin-right: 0.5rem;
+}
+
+/* ====== CTA Bar ====== */
+.cta-bar {
+  background-color: #e9f2ff;
+  border: 1px solid #cfe2ff;
+  border-radius: 6px;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .col-md-6 {
+    flex: 1 1 100%;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+}
